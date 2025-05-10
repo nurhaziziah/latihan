@@ -1,105 +1,158 @@
-
 <!DOCTYPE html>
-<html>
-
-<head>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
     <title>Profil Nurhaziziah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 20px;
-        }
+      .halaman {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #050705;
+        margin: 20px;
+      }
 
-        img {
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
+      .foto-profil {
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
 
-        a {
-            text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
-        }
+      .tautan {
+        font-size: 14px;
+        text-decoration: none;
+        color: #007bff;
+      }
 
-        a:hover {
-            color: #0056b3;
-        }
+      .tautan:hover {
+        color: #0056b3;
+      }
 
-        h1 {
-            color: #444;
-        }
+      .judul {
+        color: #130f0f;
+      }
 
-        p {
-            font-size: 16px;
-        }
+      .paragraf {
+        font-size: 16px;
+      }
 
-        form {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            max-width: 400px;
-        }
+      .formulir {
+        margin-top: 40px;
+        padding: 40px;
+        background-color: #8ccabd;
+        border: 1px solid #080e05;
+        border-radius: 10px;
+        max-width: 400px;
+      }
 
-        label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
+      .label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
 
-        input[type="text"],
-        input[type="email"] {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+      .input-text {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #083c49;
+        border-radius: 4px;
+      }
 
-        input[type="radio"] {
-            margin-right: 5px;
-        }
+      .input-radio {
+        margin-right: 5px;
+      }
 
-        button {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
+      .tombol {
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
-        button:hover {
-            background-color: #0056b3;
+      .tombol:hover {
+        background-color: #1f7cdf;
+      }
+
+      .wadah {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .kotak {
+        width: 30%;
+        background-color: rgb(127, 250, 229);
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+
+      .gambar-pusat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .sosial-media {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 15px;
+        color: #007bff;
+      }
+
+      @media (max-width: 760px) {
+        .kotak {
+          width: 100%;
         }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <img src="Gambar WhatsApp 2025-05-03 pukul 11.09.44_718db49f.jpg" alt="Foto Saya" width="150"><br />
-    <a href="https://www.google.com" target="_blank">Zizi</a><br />
-    <a href="https://github.com/nurhaziziah/latihan.git" target="_blank">nurhaziziah</a><br />
-    <h1>Nurhaziziah Insani</h1>
-    <p>Mahasiswa Semester 6 Jurusan Sistem Informasi</p>
+  <body class="halaman">
+    <div class="wadah">
+      <div class="kotak">
+        <div class="gambar-pusat">
+          <img
+            src="Gambar WhatsApp 2025-05-03 pukul 11.09.44_718db49f.jpg"
+            alt="Foto Saya"
+            width="150"
+            class="foto-profil"
+          />
+        </div>
+        <div class="sosial-media">
+          <a class="tautan" href="https://www.google.com" target="_blank">Zizi</a><br />
+          <a
+            class="tautan"
+            href="https://github.com/nurhaziziah/latihan.git"
+            target="_blank"
+            >nurhaziziah</a
+          ><br />
+        </div>
+        <h1 class="judul">Nurhaziziah Insani</h1>
+        <p class="paragraf">Mahasiswa Semester 6 Jurusan Sistem Informasi</p>
+      </div>
 
-    <form>
-        <label>Nama:<input type="text"></label>
-        <label>Email:<input type="email"></label>
-        <label>Alamat:<input type="text"></label>
-        <label>Nomor Telepon:<input type="text"></label>
-        <label>Jenis Kelamin:
-            <label>Laki-laki</label>
-            <input type="radio" name="gender" value="male">
-            <label>Perempuan</label>
-            <input type="radio" name="gender" value="female">
-        </label>
-        <button type="submit">Kirim</button>
-    </form>
-</body>
+      <div class="kotak">
+        <form class="formulir">
+          <label for="nama" class="label">Nama:</label>
+          <input type="text" id="nama" name="nama" class="input-text" />
 
+          <label for="email" class="label">Email:</label>
+          <input type="email" id="email" name="email" class="input-text" />
+
+          <label for="alamat" class="label">Alamat:</label>
+          <input type="text" id="alamat" name="alamat" class="input-text" />
+
+          <label for="telepon" class="label">Nomor Telepon:</label>
+          <input type="text" id="telepon" name="telepon" class="input-text" />
+
+          <button type="submit" class="tombol">Kirim</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
-
